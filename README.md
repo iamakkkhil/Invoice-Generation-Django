@@ -1,5 +1,22 @@
 # Invoice-Generator 
+Created an automatic invoice generator using React as frontend and Django & Django REST Framework as backend. 
+In this Project one can create an invoice, edit as well as download their invoices in a PDF format. 
 
+## REST APIs Used:
+* **GET**: To get the list of available items with details.
+* **POST**: To send the list of items to buy with corresponding quantities.
+* **PUT**: To update the list of items in the purchase list.
+* **GET**: To get the invoice for the purchase in pdf format with all the necessary details filled dynamically.
+* **GET**: To get the customer details with the items they have purchased.
+* **GET**: To get the details of all the Customers with their invoices.
+
+
+## Tech Stack:
+### Frontend: 
+React, Chakra-UI, HTML, CSS, JS, React-Router-DOM, Fontawesome.
+
+### Backend:
+Python, Django, Django REST Framework, Reportlab(for PDF formatting and generation), CORS headers, SQLite.
 
 
 # Working Screenshots
