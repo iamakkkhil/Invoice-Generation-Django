@@ -33,7 +33,7 @@ function App({props}) {
                 </ChakraProvider > 
               </Route>
 
-              <Route exact path="/add">
+              <Route path="/add">
                 <ChakraProvider>
                   <AddItem method="GET"/>
                 </ChakraProvider>

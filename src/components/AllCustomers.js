@@ -62,9 +62,11 @@ const Table = () => {
         <>
             <h1 id='title'><strong>Available Invoices</strong></h1>
 
-            <Button colorScheme="green" size="lg" type="submit" mb={5} onClick={event =>  window.location.href='/add'}>
-                Create New Invoice
-            </Button>
+            <Link to={{ pathname: `/add`, state: { prodIndex: "1" }}}>
+                <Button colorScheme="green" size="lg" type="submit" mb={5}>
+                    Create New Invoice
+                </Button>
+            </Link>
 
             <table id='employee'>
                 <thead>
