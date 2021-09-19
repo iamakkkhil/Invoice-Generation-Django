@@ -19,11 +19,11 @@ import {
 function App({props}) {
 
   // console.log(window.location.pathname);
-  const hist = createBrowserHistory()
+  // const hist = createBrowserHistory()
 
   return (
       <div className="App">
-        <Router history={hist}>
+        <Router >
           <div>
             <Switch>
 
