@@ -1,7 +1,7 @@
 import './App.css';
 import AddItem from './components/getItems' 
 import AllCust from './components/AllCustomers'
-
+import { createBrowserHistory } from 'history';
 
 import {
   ChakraProvider,
@@ -13,14 +13,17 @@ import {
   Route,
 } from "react-router-dom";
 
+// import { browserHistory } from 'react-router-dom'
+
 
 function App({props}) {
 
   // console.log(window.location.pathname);
+  const hist = createBrowserHistory()
 
   return (
       <div className="App">
-        <Router>
+        <Router history={hist}>
           <div>
             <Switch>
 
@@ -30,7 +33,7 @@ function App({props}) {
                 </ChakraProvider > 
               </Route>
 
-              <Route exact path="/add">
+              <Route exact path="/add/">
                 <ChakraProvider>
                   <AddItem method="GET"/>
                 </ChakraProvider>
