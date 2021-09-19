@@ -113,7 +113,7 @@ export default function App(props) {
         newData["purchased_items_obj"] = purchasedItems;
         setData(newData)
         const myObjStr = JSON.stringify(data);
-        console.log(myObjStr);
+        // console.log(myObjStr);
 
         const requestOptions = {
             method: "POST",

@@ -115,6 +115,7 @@ export default function App(props) {
 
     
         const myObjStr = JSON.stringify(data);
+        console.log(myObjStr)
 
         const requestOptions = {
             method: "PUT",
